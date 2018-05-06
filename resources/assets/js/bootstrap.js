@@ -10,7 +10,12 @@ window._ = require('lodash');
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
+    /**
+     * Require 
+     * require('bootstrap-sass')
+     * in order to revert to BS 3.3.7
+     */
+    require('bootstrap');
 } catch (e) {}
 
 /**

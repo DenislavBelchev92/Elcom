@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::redirect('/', '/index', 301);
 Route::get('/index', 'PagesController@index');
+
+Route::get('/howTo', 'PagesController@howTo');
+
+Route::get('/about', 'PagesController@about');
